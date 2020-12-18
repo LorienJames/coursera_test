@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>First HTML page with CSS</title>
+	<link rel="stylesheet" href="style_responsive.css">
+</head>
+<body>
+	<h1 id="top">My First HTML Page now with CSS</h1>
+	<div>
+		<img src="intro_HTML.png" width="33%" height="235" alt="Picture of intro to HTML">
+		<img src="Getting_Started_HTML.png" width="33%" height="235" alt="Picture of getting started HTML">
+		<img src="Future in browser.png" width="33%" height="235" alt="Picture of future in browser">
+	</div>
+	<div id="topbar">	
+		<p id="bar"><a href="#section1">Lists in HTML</a></p>
+		<p id="bar"><a href="#section2">HTML Links and Sections</a></p>
+		<p id="bar"><a href="#section3">HTML Images</a></p>
+		<p id="bar2"><a href="#section4">CSS Anatomy and Selectors</a></p>
+		<p id="bar2"><a href="#section5">CSS Box Model and Floating</a></p>
+		<p id="bar2"><a href="#section6">CSS Responsive Design</a></p>
+		<p id="bar2"><a href="#section7">Bootstrap</a></p>
+		<div id="bar_clear"></div>	
+	</div>
+	<section id="intro">
+		<p>This is writen using the character set utf-8. I'm using the tags &lt;body&gt;, &lt;h1&gt;, &lt/h1&gt;, &lt;p&gt;, &lt;/p&gt;, &lt;div&gt;, &lt;/div&gt; to open and close the body, heading, paragraph and division. The &lt; and &gt; sybols have been escaped using the character&nbsp;entity&nbsp;references & l t ; and & g t ;. The character entity refence & n b s p ; has also been used to create the spaces between the three words (character entity references) in the previouse sentence to ensure that all three words are wrapped on the same line.</p>
+	</section>
+	<section id=section1>
+		<h2>Lists in HTML</h2>
+		<div>
+		An Unordered List using the following tags:
+			<ul>
+				<li>&lt;ul&gt; to open the unordered list
+					<ul>
+						<li>&lt;li&gt; to open a list item</li>
+						<li>&lt;/li&gt; to close a list item</li>
+					</ul>
+				</li>	
+				<li>&lt;/ul&gt; to close the unordered list</li>
+			</ul>
+		</div>
+		
+		<img src="HTML-LISTS.jpg" width="100%" Height="200" alt="Picture of a HTML list">
+		
+		<div>
+			An Ordered List using the tags:
+			<ol>
+				<li>&lt;ol&gt; to open an ordered list
+					<ol>
+						<li>&lt;li&gt; to open a list item</li>
+						<li>&lt;/li&gt; to close a list item</li>
+					</ol>
+				</li>
+				<li>&lt;/ol&gt; to close the ordered list</li>
+			</ol>
+		</div>
+	</section>
+	<section id="section2">
+		<h2>HTML Links & Sections</h2>
+		<div id="S2">
+			<p>Create a link to a file in the same directory with &lt;a href equal to the link, title equal to the name&gt; then this is where the text for the link goes&lt;/a&gt;. Next a link to another site &lt;a href equal to the site, title equal to the name of the site&gt; now the clickable text&lt;/a&gt;.</p>
+		</div>
+		<img src="HTML_Link.jpg" width="900" Height="300" alt="Picture of a HTML link">
+		<div id="S2-3">	
+			<p>
+				A link to a file in the same directory:
+				<a href="index.html" title="index.html">Link to Index of this directory</a>
+			</p>	
+			<p>
+				The same link but using &lt;div&gt; to show the link on a seperate line:
+				<a href="index.html" title="index.html"> <div>Link to Index of this directory</div></a>
+			</p>	
+			<p>
+				Linking to another site <a href="http://www.pdsnet.co.za" title="PDSNet">PDSNet</a>.
+			</p>
+			<p>
+				To open another site in a new tab add target equal to _blank <a href="http://www.pdsnet.co.za" target="_blank" title="PDSNet">PDSNet</a>.
+			</p>
+			<p>
+				Add section breaks and give each section an id. This allows you to link to each section within a page. For example &lt;a href equal to #section1&gt;section title&lt;/a&gt;
+			</p>
+		</div>	
+		<div id="S2"> List of sectional links within this page:
+			<ul>
+				<li><a href="#section1">Lists in HTML</a></li>
+				<li><a href="#section2">HTML Links and Sections</a></li>
+				<li><a href="#section3">HTML and Images</a></li>
+				<li><a href="#section4">CSS Anatomy and Selectors</a></li>
+				<li><a href="#section5">CSS Box Model and Floating</a></li>
+				<li><a href="#section6">CSS Responsive Design</a></li>
+				<li><a href="#section7">Bootstrap</a></li>
+			</ul>
+		</div>
+		<div id="S2-5">
+			<p>
+				Sectional link with '&lt;a href equal to #top&gt;' <a href="#top">back to top</a> '&lt;/a&gt;. I've give &lt;h1 id equal to top&gt;.
+			</p>
+		</div>	
+	</section>
+	<section id=section3>
+		<h2>HTML and Images</h2>
+		<p>Images can be added by &lt;img src equal to the location of the file, width equal to required width, height equal to the required heigh and alt equal to a decription.</p>
+		<p><img src="frog.jpg" width="33%" height="235" alt="Picture of a frog"> An image is an inline element.</p>
+	</section>
+	<section id="section4">
+		<h2>CSS Anatomy and Selectors</h2>
+		<div>
+			<img src="get_styling.png" width="33%" height="235" alt="Get styling with CSS3"> 
+			<img src="CSS_yellow.jpg" width="33%" height="235" alt="picture of CSS with brackets">
+			<img src="zero_hero.jpg" width="33%" height="235" alt="CSS3, zero to hero">
+		</div>
+		<p>The anatomy of a CSS rule can be defined by 'secector&nbsp;{property:&nbsp;value;}' with the content in the {} being the 'declaration'. A CSS rule can contain multiple declaration and can range from zero to many. A collection of CSS rules is called a style sheet and it is best practice for this to be a seperate file linked with &lt;link rel="stylesheet"&nbsp;href="style.css"&gt;. The CSS code can be placed in the HTML document itself with &lt;style&gt; or placed within an element style=.</p>
+		<p>CSS has three different selectors: element secector, class selector, id selector. The element selector targets an element p&nbsp;{color:&nbsp;blue;} with p being the target element for &lt;p&gt;. Whereas class selector you can set a class to target .blue&nbsp;{color:&nbsp;blue;} and then set a class within the element &lt;p&nbsp;class="blue"&gt;. Id selectors will target id set within elements and #section1&nbsp;{color:&nbsp;blue;} will target id="section1" within an element. You can specify multiple selectors by placing a ',' following the selector preceeding another selector. Selectors can be combined to consider elements wihin a class, child of another element or a decendant. Examples of this are: 
+			<ol>
+				<li>p.big&nbsp;{font-size:&nbsp;20px;} will target any &lt;p&gt; with class="big"
+				<li>article&nbsp;&gt;&nbsp;p&nbsp;{color:&nbsp;blue;} will target any &lt;p&gt; directly within an &lt;article&gt;</li>		
+				<li>article&nbsp;p&nbsp;{color:&nbsp;blue;} will target any &lt;p&gt; that is a descendant of an &lt;article&gt;</li>
+			</ol>	
+		</p>
+		<p>There are also pseudo-class selectors and these are defined by :selector or for example a:link or a:visited. There are many of these selectors and we note the following:
+			<ol>
+				<li>:link</li>
+				<li>:visited</li>
+				<li>:hover</li>
+				<li>:active</li>
+				<li>:nth-child(...) for example section4&nbsp;li:nth-child(odd)&nbsp;{background-color:&nbsp;#00bfff;}</li>
+			</ol>
+		</p>
+	</section>
+	<section id="section5">
+		<h2>CSS Box Model and Floating</h2>
+		<div>
+			<p id="border_box1">
+			A function introduced in CSS3 is border box and sets the box size to include padding and border. This can be specified in a styling sheet as *{box-sizing:&nbsp;border-box}. Note we use a star selector to target all elements as border box is not inherited by child elements.
+			</p>
+			<p id="border_box2"><img src="HTML_box.png" width="100%" height="235" alt="Picture example of a box"></p>
+			<p id="border_box3">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+			<p id="border_box4">This box has been floated left along with the three boxes above and the box to the right.</p>
+			<p id="border_box5"></p>
+			<p id="border_box6">Static, relative and absote element positioning. By default &lt;HTML&gt; is the only element that does not have the default setting static and has the positioning set to relative. The &lt;div&gt; has been given a relative position along with this box and this box has been moved 33% left (33% from the left).</p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</div>
+	</section>
+	<section id="section6">
+		<h2>CSS Responsive Design</h2>
+		<div>
+			<article>
+				<p>Media queries adjust the look of a website according to screen size. An example: @media&nbsp;(min-width:&nbsp;1200)&nbsp;{p&nbsp;{color:&nbsp;blue;}}</p>
+				<p>This can be viewed as: media feature(resolves to true or false) and then the style within the feature is either applied or not.</p>
+				<ul>Common features include:
+					<li>@media (max-width) {...}</li>
+					<li>@media (min-width) {...}</li>
+					<li>@media (orientation: portrait) {...}</li>
+					<li>@media screen {...}</li>
+					<li>@media print {...}</li>
+				</ul>
+				<p>Media features can be combined using logic operators: and , (or).</p>
+			</article>
+		</div>
+	</section>
+	<section id="section7">
+		<h2>Bootstrap</h2>
+		<article>
+			<p>Bootstrap is a prepopulated CSS style sheet with Java Script built in.</p>
+			<div>
+				Bootstrap is based on a grid system of floated elements?
+				<img src="bootstrap_grid_system.png" width="100%" height="235" alt="image of bootstrap grid system">
+			</div>
+		</article>
+	</section>
+
+</body>
+<footer class="foot">The &lt;footer&gt;&lt;/footer&gt; with &copy; escaped using the character entity reference & c o p y ;.</footer>
+</html>

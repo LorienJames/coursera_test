@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>First HTML page</title>
+</head>
+<body>
+<h1 id="top">My First HTML Page</h1>
+<img src="intro_HTML.png" width="400" height="235" alt="Picture of intro to HTML">
+<img src="Getting_Started_HTML.png" width="400" height="235" alt="Picture of getting started HTML">
+<img src="Future in browser.png" width="400" height="235" alt="Picture of future in browser">
+<p>This is writen using the character set utf-8. I'm using the tags &lt;body&gt;, &lt;h1&gt;, &lt/h1&gt;, &lt;p&gt;, &lt;/p&gt;, &lt;div&gt;, &lt;/div&gt; to open and close the body, heading, paragraph and division. The &lt; and &gt; sybols have been escaped using the character&nbsp;entity&nbsp;references & l t ; and & g t ;. The character entity refence & n b s p ; has also been used to create the spaces between the three words (character entity references) in the previouse sentence to ensure that all three words are wrapped on the same line.</p>
+<section id=section1>
+		<h2>Lists</h2>
+	<div>
+		An Unordered List using the following tags:
+		<ul>
+			<li>&lt;ul&gt; to open the unordered list
+			<ul>
+				<li>&lt;li&gt; to open a list item</li>
+				<li>&lt;/li&gt; to close a list item</li>
+			</ul>
+			</li>	
+			<li>&lt;/ul&gt; to close the unordered list</li>
+		</ul>
+	</div>
+	<img src="HTML-LISTS.jpg" width="1200" Height="300" alt="Picture of a HTML list">
+	<div>
+		An Ordered List using the tags:
+		<ol>
+			<li>&lt;ol&gt; to open an ordered list
+			<ol>
+				<li>&lt;li&gt; to open a list item</li>
+				<li>&lt;/li&gt; to close a list item</li>
+			</ol>
+			</li>
+			<li>&lt;/ol&gt; to close the ordered list</li>
+		</ol>
+	</div>
+</section>
+<section id=section2>
+	<h2>Links & Sections</h2>
+	<p>Create a link to a file in the same directory with &lt;a href equal to the link, title equal to the name&gt; then this is where the text for the link goes&lt;/a&gt;. Next a link to another site &lt;a href equal to the site, title equal to the name of the site&gt; now the clickable text&lt;/a&gt;.</p>
+	<img src="HTML_Link.jpg" width="400" Height="300" alt="Picture of a HTML link">
+	<p>A link to a file in the same directory:
+		<a href="index.html" title="index.html">Link to Index of this directory</a>
+	</p>	
+	<p>The same link but using &lt;div&gt; to show the link on a seperate line:
+		<a href="index.html" title="index.html"> <div>Link to Index of this directory</div></a>
+	</p>	
+	<p>Linking to another site <a href="http://www.pdsnet.co.za" title="PDSNet">PDSNet</a>.</p>
+	<p>To open another site in a new tab add target equal to _blank <a href="http://www.pdsnet.co.za" target="_blank" title="PDSNet">PDSNet</a>.</p>
+	<p> Add section breaks and give each section an id. This allows you to link to each section within a page. For example &lt;a href equal to #section1&gt;section title&lt;/a&gt;</p>
+	<div> List of sectional links within this page:
+		<ul>
+			<li><a href="#section1">Lists</a></li>
+			<li><a href="#section2">Links</a></li>
+			<li><a href="#section3">Images</a></li>
+		</ul>
+	</div>
+	<p> Sectional link with '&lt;a href equal to #top&gt;' 
+		<a href="#top">Back to top</a> '&lt;/a&gt;. I've give &lt;h1 id equal to top&gt;.
+	</p>
+</section>
+<section id=section3>
+	<h2>Images</h2>
+	<p>Images can be added by &lt;img src equal to the location of the file, width equal to required width, height equal to the required heigh and alt equal to a decription.</p>
+	<p><img src="frog.jpg" width="400" height="235" alt="Picture of a frog"> An image is an inline element.</p>
+</section>	
+</body>
+<footer>The &lt;footer&gt;&lt;/footer&gt; with &copy; escaped using the character entity reference & c o p y ;.</footer>
+</html>
