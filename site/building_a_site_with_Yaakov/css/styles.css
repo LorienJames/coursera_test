@@ -1,0 +1,79 @@
+body {
+	font-size: 16px;
+	color: #fff;
+	background-color: #61122f;
+	font-family: 'Oxygen', sans-serif;
+}
+
+/** HEADER **/
+#header-nav {
+	background-color: #f6b319;
+	border-radius: 0;
+	border: 0;
+}
+
+#logo-img {
+	background: url('../images/restaurant-logo_large.png') no-repeat;
+	width: 150px;
+	height: 150px;
+	margin: 10px 15px 10px 0;
+}
+
+
+.navbar-brand h1 { /** Restaurant name **/
+	
+	font-family: 'Lora', serif;
+	color: #557c3e;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px #222;
+	margin-top: 0;
+	margin-bottom: 0;
+	line-height: 1;
+}
+
+.navbar-brand a:link, .navbar-brand a:visited {
+	text-decoration: none;
+}
+
+.navbar-brand a:hover, .navbar-brand a:active {
+	text-decoration: none;
+}
+
+.navbar-brand span { /** Kosher Certified **/
+	color: #363636;
+	font-size: .75em;
+}
+
+#nav-list {
+	margin: 10px;
+}
+
+#nav-list a {
+	color: #951c49;
+	text-align: center;
+}
+
+#nav-list a:hover {
+	background: #e7e7e7;
+}
+
+#nav-list a span {
+	font-size: 1.8em;
+}
+
+#phone {
+	margin-top: 5px;
+}
+
+#phone a {
+	text-align: right;
+	padding-bottom: 0;
+}
+
+#phone div {
+	color: #557c3e;
+	text-align: right;
+	padding-right: 0px;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>HTML for JavaScript test</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+<body>
+	<h1 id="title">JavaScript Test Page</h1>
+
+	<button onclick="change_color()">Change colour</button>
+	<button onclick="change_pink()">Pink</button>
+	<button onclick="change_blue()">Blue</button>
+	<button onclick="change_green()">Green</button>
+	<button onclick="change_disappear()">Disappear</button>
+
+	<div>
+		<p>
+		Click on the button and run code for x and y values!
+		<button onclick="run_button();">
+			Click Here
+		</button>
+		</p>
+		
+		<div id="answer_container">
+			<div id="content"></div>
+		</div>
+	</div>	
+
+	<p>
+		Please enter a number
+		<input id="number_a" type="text">
+		and give a second
+		<input id="number_b" type="text">
+		<button onclick="handle_numbers()">Run Numbers</button>
+		<div id="answer_container">
+			<ul>
+				<li id="number_result_addition"></li>
+				<li id="number_result_subtraction"></li>
+				<li id="number_result_multiplication"></li>
+				<li id="number_result_division"></li>
+			</ul>
+		</div>
+	</p>	
+
+	<script src="trying out js.js"></script>
+</body>
+</html>
