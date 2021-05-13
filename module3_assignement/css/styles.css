@@ -1,0 +1,17 @@
+body {
+	font-size: 16px;
+	color: #fff;
+	background-color: #000;
+	font-family: helvetica, arial, sans-serif;
+}
+
+.navbar {
+	color: #000;
+	background-color: #89CFF0;
+}
+
+.navbar-brand {
+	color: #000;
+	font-weight: 900;
+	float: left;
+}
