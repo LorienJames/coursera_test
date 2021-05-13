@@ -1,0 +1,14 @@
+* {
+	box-sizing: border-box;
+}
+body{
+	background-color: #f0ffff;
+}
+h1 {
+	color: #000000;
+	text-align: center;
+	font-size: 100px;
+	background-color: #73b1b7;
+	border-width: 5px;
+	margin: 5px;
+}
